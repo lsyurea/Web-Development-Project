@@ -1,0 +1,16 @@
+body{
+    background-color: #edd9c6;
+}
+
+hr{
+    border-color: #d1916e;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 10px;
+    width: 20%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: rgb(192, 181, 119);
+    font-family: Bradley Hand;
+}
