@@ -1,12 +1,21 @@
 body {
     background-color: #edd9c6;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .front {
     
     background-image: url("../images/NUS\ school\ of\ computing.jpeg");
     opacity: 0.5;
+    height:75vh;
+}
+
+.front:hover {
+    background-image: url("../images/NUS\ school\ of\ computing.jpeg");
+    opacity: 1;
     height:75vh;
 }
 .top {
@@ -47,6 +56,8 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(../images/Original\ chess\ image.png);
     width: 85%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile-content {
