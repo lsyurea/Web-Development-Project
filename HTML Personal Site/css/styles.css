@@ -30,6 +30,13 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1;
 }
 
+.chess:hover {
+    opacity: 0.8;
+    background-image: url(../images/Original\ chess\ image.png);
+    width: 75%;
+    height: auto;
+}
+
 .profile-content {
     position: relative;
 }
@@ -38,4 +45,19 @@ h1, h2, h3, h4, h5, h6 {
 #name {
     font-family: Luminari, fantasy;
     font-weight: 900;
+}
+
+.emoji-original {
+    opacity: 0.2;
+}
+.emoji {
+    opacity: 0.8;
+}
+
+.emoji:hover {
+    opacity: 1
+}
+
+.emoji-original:hover {
+    opacity: 1;
 }
