@@ -16,7 +16,10 @@ body {
 .front:hover {
     background-image: url("../images/NUS\ school\ of\ computing.jpeg");
     opacity: 1;
-    height:75vh;
+    height: 75vh;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .top {
     text-align:center;
