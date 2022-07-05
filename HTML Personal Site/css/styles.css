@@ -1,5 +1,17 @@
 body {
     background-color: #edd9c6;
+    margin: 0;
+}
+
+.front {
+    
+    background-image: url("../images/NUS\ school\ of\ computing.jpeg");
+    opacity: 0.5;
+    height:75vh;
+}
+.top {
+    text-align:center;
+    height:25vh;
 }
 
 hr {
@@ -25,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: 0;
     top: 0;
-    width: 75%;
+    width: 100%;
     height: auto;
     z-index: -1;
 }
@@ -33,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 .chess:hover {
     opacity: 0.8;
     background-image: url(../images/Original\ chess\ image.png);
-    width: 75%;
+    width: 85%;
     height: auto;
 }
 
