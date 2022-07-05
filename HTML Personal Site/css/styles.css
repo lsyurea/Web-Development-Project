@@ -1,8 +1,8 @@
-body{
+body {
     background-color: #edd9c6;
 }
 
-hr{
+hr {
     border-color: #d1916e;
     border-style: none;
     border-top-style: dotted;
@@ -10,7 +10,32 @@ hr{
     width: 20%;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     color: rgb(192, 181, 119);
     font-family: Bradley Hand;
+}
+
+.chess {
+    overflow: hidden;
+    position: relative;
+}
+
+.chess-bg {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75%;
+    height: auto;
+    z-index: -1;
+}
+
+.profile-content {
+    position: relative;
+}
+
+
+#name {
+    font-family: Luminari, fantasy;
+    font-weight: 900;
 }
