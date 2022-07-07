@@ -1,13 +1,32 @@
 body {
     font-family: 'Merriweather', serif;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    background-color: rgb(208, 246, 246);
+   
 }
 
 h1 {
     text-align: center;
 }
 
+section {
+    padding: 5rem 0;
+}
+
+#hobbies:hover {
+    background-color: rgb(76, 118, 114);
+}
+
+#hobbies {
+    background-color: rgb(192, 229, 226);
+}
+
+#hobbies>h1 {
+    color: rgb(144, 172, 169);
+}
+
+h4 {
+    padding: 30px 0px;
+}
 #about {
     margin-top: 55px; 
     color: rgb(44, 44, 89); 
@@ -27,6 +46,23 @@ ul {
     list-style: none;
 }
 
-#about>ul>li {
+#about>ul>li, #about>div {
     padding: 0.5rem;
+}
+
+#contactme {
+    padding: 20px;
+    
+    text-align: center;
+    font-size:large;
+    background-color: rgb(144, 202, 202);
+ 
+}
+
+#contactme>a {
+    padding: 5rem;
+}
+
+#contactme>p {
+    padding-top: 3rem;
 }
