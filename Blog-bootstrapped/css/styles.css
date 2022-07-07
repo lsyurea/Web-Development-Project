@@ -1,0 +1,32 @@
+body {
+    font-family: 'Merriweather', serif;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+#about {
+    margin-top: 55px; 
+    color: rgb(44, 44, 89); 
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(44, 44, 89); 
+}
+
+a:hover {
+    color: rgb(185, 165, 165);
+}
+
+ul {
+    list-style: none;
+}
+
+#about>ul>li {
+    padding: 0.5rem;
+}
