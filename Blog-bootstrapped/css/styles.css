@@ -24,10 +24,8 @@ section {
     color: rgb(144, 172, 169);
 }
 
-h4 {
-    padding: 30px 0px;
-}
-#about {
+
+#about{
     margin-top: 55px; 
     color: rgb(44, 44, 89); 
     padding: 20px;
@@ -46,9 +44,7 @@ ul {
     list-style: none;
 }
 
-#about>ul>li, #about>div {
-    padding: 0.5rem;
-}
+
 
 #contactme {
     padding: 20px;
@@ -65,4 +61,18 @@ ul {
 
 #contactme>p {
     padding-top: 3rem;
+}
+
+.about-design {
+    background-color: rgb(158, 240, 231);
+}
+
+img {
+    width: 45rem;
+    height: 45rem;
+    object-fit: contain;
+}
+
+.container-fluid{
+    padding: 5rem;
 }
