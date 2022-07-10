@@ -34,7 +34,7 @@ section {
 
 a {
     text-decoration: none;
-    color: rgb(44, 44, 89); 
+    color: rgb(98, 98, 113); 
 }
 
 a:hover {
@@ -78,4 +78,8 @@ img {
 .container-fluid{
     padding: 5rem;
   
+}
+
+i {
+    font-size: 5rem;
 }
