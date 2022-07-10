@@ -80,6 +80,12 @@ img {
   
 }
 
-i {
-    font-size: 5rem;
+.icon {
+    font-size: 5rem; 
+    padding: 1rem;
+    color: rgb(185, 203, 215);
+}
+
+.icon:hover {
+    color: rgb(114, 114, 142);
 }
