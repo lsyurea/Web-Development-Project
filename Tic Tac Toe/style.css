@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.head {
+    text-align: center;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 3px 3px grey;
+}
+
+.buttons button {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    transition: 0.5s;
+}
+
+.buttons button:hover {
+    width: 180px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px 10px;
+}
+
+.initiate {
+    width: 60vh;
+    height: 60vh;
+    background-color: grey;
+}
+
+.square {
+    width: 19vh;
+    aspect-ratio: 1/1;
+    background-color: black;
+}
