@@ -1,9 +1,13 @@
 let player = 1;
 let tempBoard = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+
 function createBoard() {
     player = 1;
     tempBoard = [0, 0, 0, 0, 0, 0, 0, 0, 0];
     let board = document.querySelector(".board");
+    board.className = "board";
+    board.innerHTML = "";
     if (!board.classList.contains('initiate')) {board.classList.add('initiate');};
     Array.from(board.querySelectorAll('div')).forEach(x => x.remove());
     for (let i = 0; i < 9; i++) {
@@ -13,15 +17,13 @@ function createBoard() {
             tempBoard[i] = player;
             switchPlayer();
             div.append(createObj(player));
-            console.log(tempBoard);
+            if (checkBoard()) gameOver();
         });
         div.style.backgroundColor = '#fff';
         board.appendChild(div);
     }
     
 }
-
-
 
 switchPlayer = () => player = player === 1? 2: 1 ; 
 function checkBoard() {
@@ -72,4 +74,10 @@ function cross() {
     final.append(first);
     final.append(second);
     return final;
+}
+
+gameOver = () => {
+    let board = document.querySelector('.board');
+    board.className = "board over"
+    board.innerHTML = "<h1>Game Over!</h1>";
 }
