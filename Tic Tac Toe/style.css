@@ -39,10 +39,48 @@ body {
     width: 60vh;
     height: 60vh;
     background-color: grey;
+    transition: 0.5s;
 }
 
-.square {
-    width: 19vh;
-    aspect-ratio: 1/1;
+.board .outerCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14.5vw;
+    height: 14.5vh;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.board .innerCircle {
+    position: absolute;
+    width: 14vh;
+    height: 14vh;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+.board > div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.board .final {
+    position: relative;
+    right: 90px;
+}
+.board .first, .board .second{
+    position: absolute;
+    width: 15vw;
+    height: 1vh;
     background-color: black;
+    
+}
+
+.board .first {
+    transform: rotate(45deg);
+}
+.board .second {
+    transform: rotate(-45deg);
 }
