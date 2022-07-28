@@ -70,7 +70,6 @@ function cross() {
     second.classList.add('second');
     final = document.createElement('div');
     final.classList.add('final')
-    final.style
     final.append(first);
     final.append(second);
     return final;
