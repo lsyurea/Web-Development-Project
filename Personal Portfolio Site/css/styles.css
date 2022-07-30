@@ -38,6 +38,7 @@ a:hover {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    width: 100vw;
     position: relative;
     font-size: 1rem;
     gap: 2rem;
@@ -56,7 +57,7 @@ a:hover {
     /* so ugly; got to use translateX in animation to avoid translation animation*/
     transform: scale(1.1) translateX(-50%);
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
-    color:rgba(0, 0, 0, 0.8)
+    color:rgba(0, 0, 0, 0.9)
 }
 
 .top::before {
@@ -88,4 +89,31 @@ a:hover {
     height: 100vh;
     justify-content: space-around;
     align-items: center;
+}
+
+/* timeline DOM */
+body .mainline {
+    width:60vw;
+    height: 0.1rem;
+    background-color: black;
+    position: relative;
+}
+
+body .sideline {
+    --position: 0%;
+    position: absolute;
+    background-color: black;
+    transform: translate(-50%, -50%);
+    width: 0.1rem;
+    height: 3rem;
+    left: var(--position);
+}
+
+body .text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: var(--position);
+    top: 3rem;
+    width: 5rem;
+    height: 1rem;
 }
