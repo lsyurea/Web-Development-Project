@@ -48,26 +48,26 @@ a:hover {
     position: absolute;
     top: 75vh;
     transform: translateX(-50%); 
-    font-size: 1.5rem;
+    font-size: 2rem;
     transition: 0.5s 0s;
     
 }
 
 .top .about:hover {
     /* so ugly; got to use translateX in animation to avoid translation animation*/
-    transform: scale(1.1) translateX(-50%);
+    transform: scale(1.2) translateX(-50%);
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
     color:rgba(0, 0, 0, 0.9)
 }
 
-.top::before {
+body::before {
+    content:'';
     position: absolute;
-    height: 100vh;
+    height: 300vh;
     width: 100vw;
     z-index: -1;
-    content:"";
     background: linear-gradient(45deg, rgb(222, 176, 176), rgb(217, 184, 121), rgb(217, 184, 121), rgb(222, 176, 176));
-    animation: animate 20s linear infinite;
+    animation: animate 15s linear infinite;
     background-size: 500% 100%;
 }
 @keyframes animate
@@ -109,6 +109,19 @@ body .sideline {
     left: var(--position);
 }
 
+body .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 1rem solid transparent;
+    border-top: 0;
+    border-bottom: 1rem solid black;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(90deg);
+    
+
+}
+
 body .text {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -116,4 +129,60 @@ body .text {
     top: 3rem;
     width: 5rem;
     height: 1rem;
+    font-size: 1.5rem;
+    transition: 0.5s 0s;
+}
+
+body .text:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    transform: scale(1.2) translate(-50%, -50%);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
+body .projects{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#wordtimeline{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#wordtimeline:hover {
+    transform: scale(1.2);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+}
+
+#footer, #header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+    
+    height: 3rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#footer {
+    bottom: 0;
+    width: 100vw;
+}
+
+#header {
+    width: auto;
+    top: 0;
+    left: 5rem;
+    justify-content: left;
+}
+
+#footer h3:hover, #header h3:hover {
+    color: #fff
 }
